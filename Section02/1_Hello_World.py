@@ -8,6 +8,7 @@
 #
 
 # When you run on the server, run with CUDA_VISIBLE_DEVICES option.
+# Otherwise, it will take up all the GPUs.
 # e.g. CUDA_VISIBLE_DEVICES=0 python 1_Hello_World.py 
 
 
