@@ -87,6 +87,8 @@ def createNoiseVector():
 
 	return noiseVector
 
+
+
 # --- OUR CODE ---
 ### PART 0: THE DATA ### 
 realData = np.zeros(NUM)
@@ -177,8 +179,12 @@ cost = tf.reduce_sum(tf.abs(tf.subtract(pred, y)))
 optimizer = tf.train.AdamOptimizer(learning_rate=0.01).minimize(cost)
 
 ### PART 2: RUN THE MODEL ###
+
+config = tf.ConfigProto()
+config.gpu_options.allow_growth=True
+
 # Launch the graph
-with tf.Session() as sess:
+with tf.Session(config=config) as sess:
 	# Initializing the variables
 	sess.run(tf.global_variables_initializer())
 	# Generating datasets
