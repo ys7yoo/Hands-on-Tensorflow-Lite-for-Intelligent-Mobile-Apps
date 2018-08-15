@@ -17,14 +17,13 @@ import matplotlib.pyplot as plt
 import random
 import tensorflow as tf
 
-# Constants
 
+# Constants
 NUM = 100
 b_size = 5
 epochs = 500
 
 # Functions
-
 def generateNoise():
 	''' This function returns a small random value between -1.0 and 1.0
 	'''
@@ -232,5 +231,5 @@ plt.ylabel("Temperature")
 plt.xlabel("Config.")
 plt.title("Melting point")
 plt.legend()
-plt.show()
-
+#plt.show()
+plt.savefig('1_Hello_World.pdf')
