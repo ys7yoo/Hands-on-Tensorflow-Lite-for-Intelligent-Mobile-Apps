@@ -7,6 +7,10 @@
 # Video 2-1: Hello World
 #
 
+# When you run on the server, run with CUDA_VISIBLE_DEVICES option.
+# e.g. CUDA_VISIBLE_DEVICES=0 python 1_Hello_World.py 
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import random
