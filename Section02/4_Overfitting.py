@@ -1,9 +1,9 @@
 #
 # Packt Publishing
-# Hands-on Tensorflow Lite for Intelligente Mobile Apps
+# Hands-on Tensorflow Lite for Intelligent Mobile Apps
 # @author: Juan Miguel Valverde Martinez
 #
-# Seciton 2: Developing our first model in Tensorflow Lite
+# Section 2: Developing our first model in Tensorflow Lite
 # Video 2-4: Overfitting
 #
 
@@ -30,7 +30,7 @@ def generateNoise():
 	else:
 		sign=-1
 	return (np.random.random()*sign)/4
-					
+
 def realFun(p1,p2):
 	''' Function the model will learn.
 	'''
@@ -99,10 +99,10 @@ def myLossFun(x,y):
 	return tf.reduce_sum(tf.abs(tf.subtract(x,y)))
 
 # --- OUR CODE ---
-### PART 0: THE DATA ### 
+### PART 0: THE DATA ###
 realData = np.zeros(NUM)
 noisyData = np.zeros((NUM,3))
-results = np.zeros(NUM) 
+results = np.zeros(NUM)
 # Parameters
 p1 = np.linspace(-2,2,num=NUM)
 p2 = np.linspace(6,12,num=NUM)
